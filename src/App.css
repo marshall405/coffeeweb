@@ -1,38 +1,42 @@
+:root {
+
+  --primary-bg: #1b1c1d;
+  --primary: #c5c5c5;
+}
+
 .App {
-  text-align: center;
+  transition: color 2s ease;
+}
+div.ui.segment {
+  margin: 0px;
+  border-radius: 0px; 
+
+}
+.App .ui.button {
+  color: var(--primary);
+  background: var(--primary-bg);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button.ui.button:hover {
+  color: var(--primary);
+  background: var(--primary-bg);
+  opacity: .7;
 }
+ ul {
+   list-style: none;
+   padding: 0; 
+   margin: 0;
+ }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+ .custom-form.ui.form .field>label {
+   color: #FFF;
+   font-size: 1.2em;
+ }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+ .custom-form.ui.form input[type="text"], .custom-form.ui.form input[type="email"], .custom-form.ui.form textarea, .custom-form.ui.form select{
+   color: #FFF;
+   background: #1b1c1dbe;
+ }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+

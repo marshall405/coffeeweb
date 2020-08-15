@@ -1,25 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+
 import './App.css';
+import 'semantic-ui-css/semantic.min.css'
+
+import Header from './components/Header'
+import Home from './components/Home'
+import Pricing from './components/Pricing'
+import Contact from './components/Contact'
+import About from './components/About'
+import Footer from './components/Footer'
 
 function App() {
+  const [activeItem, setActiveItem] = useState('home')
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Header activeItem={activeItem} setActiveItem={setActiveItem} />
+
+        <Route exact path="/" render={() => { setActiveItem("home"); return <Home /> }} />
+        <Route exact path="/pricing" render={() => { setActiveItem("pricing"); return <Pricing /> }} />
+        <Route exact path="/contact" render={() => { setActiveItem("contact"); return <Contact /> }} />
+        <Route exact path="/about" render={() => { setActiveItem("about"); return <About /> }} />
+        <Footer setActiveItem={setActiveItem} />
+      </div>
+    </Router>
   );
 }
 

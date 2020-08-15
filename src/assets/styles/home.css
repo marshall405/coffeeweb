@@ -1,0 +1,61 @@
+.home-container.ui.segment {
+    text-align: center;
+    padding: 1em 0em;
+    height: 700px;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    border: none;
+}
+
+/* JUMBO  */
+.home-container h1.ui.header {
+    font-size: 4em;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-top: 2.5em;
+}
+
+.home-container h2.ui.header {
+    font-size: 1.7em;
+    font-weight: normal;
+    margin-top: 1.5em;
+}
+
+.button {
+    background-color: var(--primary-bg);
+    color: var(--primary)
+}
+
+.home-about ul {
+    list-style: disc;
+    color: var(--primary-bg);    
+    background-color: var(--primary-bg);    
+    border-radius: 5px;
+    margin: 20px;
+
+}
+.home-about li {
+    margin: 2px;
+    padding: 5px;
+}
+.home-about li span {
+    color: #FFF;
+}
+@media screen and (max-width: 786px) {
+
+    .home-container.ui.segment {
+        height: 300px;
+    }
+    .home-container h1.ui.header {
+        font-size: 2em;
+        margin-top: .1em;
+    }
+    .home-container h2.ui.header {
+        font-size: 1.2em;
+        margin-top: 0.5em;
+    }
+}
+
+
+
+
+

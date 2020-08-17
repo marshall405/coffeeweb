@@ -34,7 +34,7 @@ export default function Contact() {
         const URL = "https://protected-temple-13795.herokuapp.com/api/v1/contacts"
         const dev = "http://localhost:3001/api/v1/contacts"
         const [first_name, last_name, email, phone, site_package, more_info] = e.target
-        fetch(dev, {
+        fetch(URL, {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',

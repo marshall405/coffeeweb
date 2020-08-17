@@ -44,7 +44,6 @@ export default function Home(props) {
                         <Grid.Column floated='right' width={6}>
                             <Icon size="massive" name='desktop' color="red" style={{ margin: "10px" }} />
                             <Icon size="massive" name='mobile' color="yellow" style={{ margin: "10px" }} />
-
                         </Grid.Column>
                     </Grid.Row>
                     <Grid.Row>

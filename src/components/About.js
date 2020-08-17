@@ -41,8 +41,8 @@ const style = {
         background: "#1b1c1d",
         padding: "10px",
         borderRadius: "5px",
-        fontSize: '44px',
-        lineHeight: '40px',
+        fontSize: '22px',
+        lineHeight: '30px',
     }
 }
 export default function About() {

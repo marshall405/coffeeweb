@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import { Container, Header, Icon, List, Segment } from 'semantic-ui-react';
 
@@ -18,8 +18,9 @@ const style = {
         marginTop: "50px",
         display: "flex",
         flexWrap: "wrap",
-        justifyContent: "space-between",
-        aligntItems: "center"
+        justifyContent: "space-around",
+        aligntItems: "center",
+        textAlign: "center"
 
     },
     item: {
@@ -46,6 +47,9 @@ const style = {
     }
 }
 export default function About() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    })
     return (
         <Container style={style.root}>
             <Header as="h1" >

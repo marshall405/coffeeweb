@@ -27,7 +27,7 @@ export default function Footer(props) {
                             <List link inverted>
                                 <List.Item>Static and Dynamic Websites</List.Item>
                                 <List.Item>Website Maintenance</List.Item>
-                                <List.Item>Database Management</List.Item>
+                                {/* <List.Item>Database Management</List.Item> */}
                             </List>
                         </Grid.Column>
                         <Grid.Column width={7}>

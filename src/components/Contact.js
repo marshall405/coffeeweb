@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 import { Container, Header, Form, TextArea, Input, Segment, Icon, Dimmer, Loader } from 'semantic-ui-react';
 
@@ -14,7 +14,7 @@ const style = {
         borderRadius: "5px"
     },
     submit: {
-        width: "40%",
+        width: "50%",
         padding: "15px",
         display: 'flex',
         justifyContent: "space-around",
@@ -27,7 +27,9 @@ const style = {
 }
 export default function Contact() {
     const [active, setActive] = useState(false)
-
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    })
     const handleSubmit = e => {
         e.preventDefault()
         setActive(true)

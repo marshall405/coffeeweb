@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Button, Icon, Container, Header, Segment } from 'semantic-ui-react'
 
@@ -16,6 +16,9 @@ const style = {
 }
 
 export default function Pricing() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    })
     return (
         <Container style={style.root} className="pricing-container">
             <Header as="h1">

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import { Link } from 'react-router-dom'
 import '../assets/styles/home.css'
@@ -6,6 +6,9 @@ import { Segment, Header, Grid, Button, Icon } from 'semantic-ui-react'
 
 import Jumbo from './Jumbo'
 export default function Home(props) {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    })
     return (
         <>
             <Segment className="home-container">

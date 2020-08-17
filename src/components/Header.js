@@ -16,7 +16,7 @@ export default function Header(props) {
     return (
         <>
             <div className="header-container">
-                <h2 className="logo"> CoffeeWeb</h2>
+                <h2 className="logo"><Link to="/"> CoffeeWeb</Link></h2>
                 <div className="nav">
                     <Menu inverted pointing secondary>
                         <Menu.Item

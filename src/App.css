@@ -38,7 +38,9 @@ button.ui.button:hover {
    background: #1b1c1dbe;
  }
 
-
+.App .ui.dimmer {
+  position: fixed;
+}
 
  /* CONTACT SUCCESS AND ERROR */
 

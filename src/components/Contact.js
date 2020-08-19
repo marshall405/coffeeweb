@@ -32,6 +32,7 @@ export default function Contact() {
     })
     const handleSubmit = e => {
         e.preventDefault()
+        e.persist()
         setActive(true)
         const URL = "https://protected-temple-13795.herokuapp.com/api/v1/contacts"
         const dev = "http://localhost:3001/api/v1/contacts"
@@ -60,6 +61,7 @@ export default function Contact() {
                     if (json.message) {
                         const message = document.getElementsByClassName("success")[0]
                         message.classList.add("show")
+                        e.target.reset()
                         setTimeout(() => message.classList.remove("show"), 5000)
                     } else {
                         const message = document.getElementsByClassName("error")[0]
@@ -82,10 +84,10 @@ export default function Contact() {
                 null
             }
 
-            <div className="success">
+            <div className="form-status-message success">
                 <h3> Thank you for reaching out! We will be in touch soon. </h3>
             </div>
-            <div className="error">
+            <div className="form-status-message error">
                 <h3> Oops! Something went wrong. Please try again later. </h3>
             </div>
 

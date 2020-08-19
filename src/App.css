@@ -44,12 +44,15 @@ button.ui.button:hover {
 
  /* CONTACT SUCCESS AND ERROR */
 
- .success {
-   text-align: center;
-   height: 0px;
-   opacity: 0;
-   transition: all .25s ease-out;
+ .form-status-message {
+  background-color: #FFF;
+  text-align: center;
+  position: fixed;
+  height: 0px;
+  opacity: 0;
+  transition: all .25s ease-out;
  }
+ 
 
  
  .success h3 {
@@ -57,14 +60,8 @@ button.ui.button:hover {
    color: rgb(151, 37, 204);
  }
 
- .error {
-  text-align: center;
-  height: 0px;
-  opacity: 0;
-  transition: all .25s ease-out;
- }
 
- .error h3 {
+ .error h3{
    font-size: 32px;
    color: red;
  }

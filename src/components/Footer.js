@@ -30,7 +30,7 @@ export default function Footer(props) {
                                 {/* <List.Item>Database Management</List.Item> */}
                             </List>
                         </Grid.Column>
-                        <Grid.Column width={7}>
+                        <Grid.Column width={4}>
                             <Header as='h4' inverted>
                                 CoffeeWeb 2020
                             </Header>

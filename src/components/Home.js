@@ -61,7 +61,7 @@ export default function Home(props) {
 
             <Segment>
                 <Header as="h4"><Icon name="map marker" />Georgetown, Texas</Header>
-                <iframe title="map" width="100%" height="450" style={{ border: 0 }} src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ3_vaVP3VRIYRCTrAlN407GE&key=AIzaSyDRylg8Zj4mYutiGXLhkY6L5grdflpvCOE"></iframe>
+                <iframe title="map" width="100%" height="450" style={{ border: 0 }} src="https://www.google.com/maps/embed/v1/place?"></iframe>
             </Segment>
         </>
     )

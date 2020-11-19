@@ -1,7 +1,9 @@
 # [CoffeeWeb](http://oncoffeeweb.com/)
 ## NOT A REAL SITE! Built to showcase my skills!
 <p align="center">
+  <a href="http://oncoffeeweb.com/">
   <img width="500" src="./src/assets/images/coffee.png" alt="screenshot"/>
+  </a>
 </p>
 
 * This website is built as a Single Page Application and uses React-Router.

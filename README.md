@@ -6,7 +6,7 @@
   </a>
 </p>
 
-* This website is built as a Single Page Application and uses React-Router.
+* This website is built as a Fully responsive Single Page Application that uses React-Router.
 * Hosted on AWS S3. 
 * Also uses Semantic UI and a custom built API for the Contact Form that is hosted on Heroku
 
